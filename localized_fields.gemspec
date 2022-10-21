@@ -8,9 +8,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Localized Fields provides form helpers to create forms with localized fields using Mongoid.}
   gem.homepage      = 'https://github.com/tiagogodinho/localized_fields'
 
-  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  gem.files         = `git ls-files`.split("\n")
-  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  spec.files = Dir['lib/**/*.rb'] + %w[LICENSE README.md]
+  spec.test_files = spec.files.grep(%r{^(test|spec|features)/})
   gem.name          = 'localized_fields'
   gem.require_paths = ['lib']
   gem.version       = LocalizedFields::VERSION
