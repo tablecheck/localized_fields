@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Localized Fields provides form helpers to create forms with localized fields using Mongoid.}
   gem.homepage      = 'https://github.com/tiagogodinho/localized_fields'
 
-  gem.files = Dir['lib/**/*.rb'] + %w[LICENSE README.md]
+  gem.files         = Dir['lib/**/*.rb'] + %w[LICENSE README.md]
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = 'localized_fields'
   gem.require_paths = ['lib']
